@@ -4,7 +4,7 @@ Submitted by: **Yugant Nagralawala**
 
 About this web app: **UnityGrid Plaza is a virtual community space for finding live events around Dallas. Users click a venue on an interactive skyline map to see every event there, or browse all events on one page and filter them by location. Each event shows a live countdown, and events that have already happened are styled differently.**
 
-Time spent: **X** hours
+Time spent: **5** hours
 
 ## Required Features
 
@@ -14,11 +14,8 @@ The following **required** functionality is completed:
 
 - [x] **The web app uses React to display data from the API**
 - [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - [ ]  **NOTE: Your walkthrough added to the README must include a view of your Render dashboard demonstrating that your Postgres database is available**
-  - [ ]  **NOTE: Your walkthrough added to the README must include a demonstration of your table contents. Use the psql command 'SELECT * FROM tablename;' to display your table contents.**
 - [x] **The web app displays a title.**
 - [x] **Website includes a visual interface that allows users to select a location they would like to view.**
-  - [x] *Note: A non-visual list of links to different locations is insufficient.* 
 - [x] **Each location has a detail page with its own unique URL.**
 - [x] **Clicking on a location navigates to its corresponding detail page and displays list of all events from the `events` table associated with that location.**
 
@@ -36,19 +33,6 @@ The following **additional** features are implemented:
 - [x] Responsive layout for phones and tablets, with a venue button list on narrow screens where the map can't show every venue
 - [x] `npm run reset` script that drops, recreates and seeds the `locations` and `events` tables (12 sample events across 4 venues)
 - [x] REST API with parameterized SQL queries: `GET /api/locations`, `/api/locations/:id`, `/api/locations/:id/events`, `/api/events`, `/api/events/:id`
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented required features:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  GIF tool here
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
 
 ## Running locally
 
