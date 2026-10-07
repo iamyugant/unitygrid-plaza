@@ -1,0 +1,97 @@
+.event-information {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    padding: 0px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 0px;
+}
+
+.event-information img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-information-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: var(--primary);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.event-information:hover .event-information-overlay {
+    width: 100%;
+    left: 0;
+}
+
+.text {
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text i {
+    margin-right: 10px;
+}
+
+.text p {
+    color: white;
+    margin-top: 10px;
+}
+
+.negative-time-remaining {
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+.past-event img {
+    filter: grayscale(1) brightness(0.6);
+}
+
+.past-event h3 {
+    text-decoration: line-through;
+}
+
+.events-page-header {
+    padding: 20px 50px;
+}
+
+.events-page-header select {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 0;
+}
+
+
+.event-information {
+    flex-shrink: 0;
+    max-width: calc(100% - 40px);
+}
+
+@media (max-width: 800px) {
+    .events-page-header {
+        padding: 24px;
+        grid-template-columns: minmax(0, 1fr);
+        row-gap: 12px;
+    }
+
+    .event-information {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin: 10px 0;
+    }
+}

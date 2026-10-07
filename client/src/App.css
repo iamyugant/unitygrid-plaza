@@ -1,0 +1,57 @@
+.app {
+    min-height: 100vh;
+}
+
+header {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header {
+    height: 30vh;
+    width: 85vw;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    pointer-events: none; /* let clicks reach the map underneath; buttons opt back in */
+}
+
+.header-buttons {
+    pointer-events: auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-buttons button {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 24px;
+    }
+
+    .main-header {
+        width: 100%;
+        height: auto;
+        min-height: 30vh;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    #root .main-header h1 {
+        font-size: clamp(1.5rem, 9vw, 2.2rem);
+        margin-bottom: 0;
+    }
+
+    .header-buttons {
+        width: auto;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+}
